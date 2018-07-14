@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="@color/background_color">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_theme"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_main"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/lessons_tab"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_left"
+            android:drawableTop="@drawable/calendar_black_icon"
+            android:paddingTop="10dp"
+            android:text="Lessons"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:background="#dadada"
+
+            />
+        <Button
+            android:id="@+id/news_tab"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/plain_background"
+            android:drawableTop="@drawable/news_black"
+            android:paddingTop="10dp"
+            android:text="News"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:background="#dadada"
+
+            />
+        <Button
+            android:id="@+id/results_tab"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_right"
+            android:drawableTop="@drawable/result_black_icon"
+            android:paddingTop="10dp"
+            android:text="Results"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
